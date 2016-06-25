@@ -1,0 +1,36 @@
+
+body {
+  background-color: #009688;
+  font-family: 'Poppins', sans-serif;
+}
+
+.emotional-state {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+
+#sad {
+  background-color: #7986CB;
+  padding: 10px 10px;
+}
+
+#happy {
+  background-color: #FFEB3B;
+  padding: 10px 10px;
+}
+
+#lost {
+  background-color: #B0BEC5;
+  padding: 10px 10px;
+}
+
+#angry {
+  background-color: #FF9800;
+  padding: 10px 10px;
+}
+
+#numb {
+  background-color: #81D4FA;
+  padding: 10px 10px;
+}

@@ -1,0 +1,5 @@
+<h1 class="question">What Do You Carry With You Today?</h1>
+
+<% @emotions.each do |emotion| %>
+  <h2 class="emotional-state" id='<%= emotion.name.downcase %>'><%= emotion.name %></h2>
+<%end%>
