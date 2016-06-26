@@ -19,7 +19,7 @@ class EmotionsController < ApplicationController
       ## QUOTES
       @quotes = Quote.where(user_id: 1, emotion: @emotion)
       @user_content = Quote.where(user: current_user, emotion: @emotion)
-      @videos = @videos.concat(@user_content) if !@user_content.empty?
+      @quotes = @quotes.concat(@user_content) if !@user_content.empty?
       @quotes = @quotes.sample(4) #randomize quotes with max 4
 
       ## VIDEOS
@@ -31,7 +31,7 @@ class EmotionsController < ApplicationController
       ## IMAGES
       @images = Image.where(user_id: 1, emotion: @emotion)
       @user_content = Image.where(user: current_user, emotion: @emotion)
-      @videos = @videos.concat(@user_content) if !@user_content.empty?
+      @images = @images.concat(@user_content) if !@user_content.empty?
       @images = @images.sample(2) #randomize videos with max 2
     
 
