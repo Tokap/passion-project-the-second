@@ -12,6 +12,10 @@
     <p class="link"><%= link_to "Home", root_path %></p>
   <% if !user_signed_in? %>
     <p class="link"><%= link_to "Sign Up, if you want", new_user_registration_path %></p>
+    <p class="link"><%= link_to "Own Yourself", new_user_session_path %></p>
+  <% end  %>
+  <% if user_signed_in? %>
+    <p class="link"><%= link_to "I'm Done", destroy_user_session_path, method: :delete %></p>
   <% end  %>
   </div>
 <%= yield %>
