@@ -23,5 +23,8 @@
   max-width: 250px;
   float: left;
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 40px;
+  padding: 0 40px;
+  border-left: solid #E0F2F1;
+  border-right: solid #E0F2F1;
 }
