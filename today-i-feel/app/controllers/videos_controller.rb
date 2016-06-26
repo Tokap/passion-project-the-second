@@ -24,4 +24,11 @@ class VideosController < ApplicationController
     end
   end
 
+  def destroy
+    @video = Video.find(params[:id])
+    emotion = @video.emotion
+    @video.destroy if @video.user = current_user
+    redirect_to emotion_path(emotion)
+  end
+
 end

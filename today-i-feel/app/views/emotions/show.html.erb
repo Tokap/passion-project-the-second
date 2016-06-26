@@ -2,19 +2,29 @@
 
 <section class="quote-display hidden">
   <% @quotes.each do |quote| %>
-     <p class="quote-body"> <%= quote.body %> </p>
-     <p class="quote-author"><%= link_to "#{quote.author}", Wikipedia.find(quote.author).fullurl %></p>
+    <p class="quote-body"> <%= quote.body %> </p>
+    <p class="quote-author"><%= link_to "#{quote.author}", Wikipedia.find(quote.author).fullurl %></p>
+    <% if quote.user == current_user %>
+      <p class="link"><%= link_to "Get rid of it", quote_path(quote), method: :delete %></p>
+    <% end %>
+
   <% end %>
 </section>
 
 <section class="video">
   <% @videos.each do |video| %>
     <iframe class="individual-video" width="250" height="215" src="<%=video.embedded_url%>" frameborder="0" allowfullscreen></iframe>
+      <% if video.user == current_user %>
+        <p class="link"><%= link_to "Get rid of it", video_path(video), method: :delete %></p>
+      <% end %>
     <% end %>
 </section>
 
 <section class="images">
-<% @images.each do |image| %>
-  <%= image_tag(image.url, size: "400x250", alt: "Pretty Picture", class: "individual-image") %>
-  <% end %>
+  <% @images.each do |image| %>
+    <%= image_tag(image.url, size: "400x250", alt: "Pretty Picture", class: "individual-image") %>
+      <% if image.user == current_user %>
+        <p class="link"><%= link_to "Get rid of it", image_path(image), method: :delete %></p>
+      <% end %>
+  <% end %>    
 </section>

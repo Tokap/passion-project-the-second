@@ -20,6 +20,13 @@ def create
   end
 end
 
+def destroy
+  @quote = Quote.find(params[:id])
+  emotion = @quote.emotion
+  @quote.destroy if @quote.user = current_user
+  redirect_to emotion_path(emotion)
+end
+
 
 private
   def quotes_params

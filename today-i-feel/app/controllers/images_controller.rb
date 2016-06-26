@@ -20,4 +20,11 @@ class ImagesController < ApplicationController
     end
   end
 
+  def destroy
+    @image = Image.find(params[:id])
+    emotion = @image.emotion
+    @image.destroy if @image.user = current_user
+    redirect_to emotion_path(emotion)
+  end
+
 end
