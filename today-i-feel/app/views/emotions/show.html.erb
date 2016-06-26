@@ -1,14 +1,14 @@
 <h1 class="emotion-header"> <%=@emotion.name %> </h1>
 
 <section class="quote-display hidden">
-  <% @emotion.quotes.each do |quote| %>
+  <% @quotes.each do |quote| %>
      <p class="quote-body"> <%= quote.body %> </p>
      <p class="quote-author"><%= link_to "#{quote.author}", Wikipedia.find(quote.author).fullurl %></p>
   <% end %>
 </section>
 
 <section class="video">
-  <% @emotion.videos.each do |video| %>
+  <% @videos.each do |video| %>
     <iframe width="250" height="215" src="<%=video.embedded_url%>" frameborder="0" allowfullscreen></iframe>
     <% end %>
 </section>

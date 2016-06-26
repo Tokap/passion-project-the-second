@@ -1,4 +1,5 @@
-$(function(){
+$(document).on('page:change', function() {
+  // TYING THIS TO "PAGE:CHANGE" ALLOWS THE LINK TO RELOAD THE MAIN PAGE. TELL CLASS ABOUT THIS.
   var circles = $('.emotional-state')
   //FADE IN EFFECTS FOR SITE LOAD
   circles.animate({
@@ -14,12 +15,14 @@ $(function(){
 
 
   // HOVER FUNCTION
-  circles.hover( function(){ 
+  circles.hover( 
+    function(){ 
     $(this).addClass('enlarge');
-    },
-    function() {
+    }, 
+    function(){  
       $(this).removeClass('enlarge')
-  });
+    }
+  );
   // END HOVER 
 
 
