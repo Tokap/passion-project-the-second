@@ -64,3 +64,28 @@ kansas = Video.create(name: "Kansas - Carry On Wayward Son", embedded_url: "http
 puppies = Video.create(name: "Adorable Puppies", embedded_url: "https://www.youtube.com/embed/3ggIHfwkIWM", emotion: sad)
 kitties = Video.create(name: "Adorable Kitties", embedded_url: "https://www.youtube.com/embed/7HKWY5yCEh0", emotion: sad)
 tiger = Video.create(name: "Eye of the Tiger", embedded_url: "https://www.youtube.com/embed/QEjgPh4SEmU", emotion: sad)
+
+
+########### VIDEO SEED ##############
+#### HAPPY ####
+mountainscape = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg", emotion: happy)
+surf_curl = Image.create(name: "Surf", url: "http://www.instash.com/wp-content/uploads/2014/06/clark-little-2.jpg", emotion: happy) 
+
+#### NUMB ####
+x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+
+
+#### ANGRY ####
+x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+
+
+#### LOST ####
+x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+
+
+#### SAD ####
+x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
