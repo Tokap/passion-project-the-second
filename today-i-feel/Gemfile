@@ -23,7 +23,10 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'wikipedia-client'
+gem 'wikipedia-client' #added for wikipedia links
+
+gem 'devise' #added for user generation
+gem 'responders' #added to support user generation
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
