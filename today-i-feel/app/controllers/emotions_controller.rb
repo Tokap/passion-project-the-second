@@ -11,11 +11,22 @@ class EmotionsController < ApplicationController
     @emotions = @emotions.sample(@emotions.length) #randomize opening presentaiton
   end
 
+# ADD CONDITIONAL LOGIC TO CHECK IF USER CONTENT EXISTS. 
+# IF IT DOES, HARVEST FROM THAT RESOURCE AS WELL AND COMBINE FOR RANDOM
+# OUTPUT RESULTS. THESE SHOULD BE BROKEN INTO CLEAR LOGIC CHAINS FOR 
+# EACH RESOURCE
   def show
     @emotion = Emotion.find(params[:id])
-    @quotes = @emotion.quotes.sample(4) #randomize quotes with max 4
-    @videos = @emotion.videos.sample(3) #randomize videos with max 3
-    @images = @emotion.images.sample(2) #randomize videos with max 2
+    if !user_signed_in?
+      @quotes = @emotion.quotes.sample(4) #randomize quotes with max 4
+      @videos = @emotion.videos.sample(3) #randomize videos with max 3
+      @images = @emotion.images.sample(2) #randomize videos with max 2
+
+    elsif user_signed_in?
+      @quotes = @emotion.quotes.sample(4) #randomize quotes with max 4
+      @videos = @emotion.videos.sample(3) #randomize videos with max 3
+      @images = @emotion.images.sample(2) #randomize videos with max 2
+    end  
   end
 
 end
