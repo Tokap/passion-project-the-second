@@ -1,7 +1,8 @@
 <h1 class="emotion-header"> <%=@emotion.name %> </h1>
 
- <% @emotion.quotes.each do |quote| %>
-   <p class="quote-body"> <%= quote.body %> </p>
-   <p class="quote-author"> <%= quote.author %> </p>
-   <p><%= link_to "#{quote.author}", Wikipedia.find(quote.author).fullurl %></p>
- <% end %>
+<section class="quote-display hidden">
+  <% @emotion.quotes.each do |quote| %>
+     <p class="quote-body"> <%= quote.body %> </p>
+     <p class="quote-author"><%= link_to "#{quote.author}", Wikipedia.find(quote.author).fullurl %></p>
+  <% end %>
+</section>

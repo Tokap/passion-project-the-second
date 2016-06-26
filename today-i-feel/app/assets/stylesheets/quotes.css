@@ -1,0 +1,18 @@
+.quote-display {
+  max-width: 250px;
+}
+
+.quote-author a {
+  text-decoration: none;
+  font-style: italic;
+  /*color: #E0F2F1;*/
+}
+
+.quote-body {
+  color: #E0F2F1;
+}
+
+.emotion-header {
+  text-align: center;
+  color: #E0F2F1;
+}

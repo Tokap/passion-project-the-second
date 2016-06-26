@@ -1,5 +1,3 @@
-
-
 $(function(){
   var circles = $('.emotional-state')
   //FADE IN EFFECTS FOR SITE LOAD
@@ -30,5 +28,8 @@ $(function(){
     var destination = $(this).find('a').attr('href')
     window.location = destination; 
   })
+
+  //QUOTES DISPLAY FADE IN
+  $('.quote-display').fadeIn(1500);
 
 })
