@@ -42,3 +42,8 @@
 .login-options p a {
   text-decoration: none;
 }
+
+.creation-options {
+  display: inline-block;
+
+}
