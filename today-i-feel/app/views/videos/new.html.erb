@@ -2,7 +2,7 @@
 
 <%= form_for :video, url: videos_path, method: :post do |f| %>
   Name: <%= f.text_field :name %><br />
-  Url: <%= f.text_field :embedded_url %><br />
+  Url: <%= f.text_field :embedded_url, :required => true %><br />
   Emotion: <%= select_tag(:emotion, options_for_select([['Happy'], ['Sad'], ['Numb'], ['Angry'], ['Lost']])) %><br /><br />
   <%= f.submit %>
 <% end %>
