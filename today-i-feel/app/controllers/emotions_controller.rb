@@ -1,7 +1,10 @@
 class EmotionsController < ApplicationController
-
+# before_action :authenticate_user!
+# THE SYNTAX ABOVE BLOCKS ACCESS TO ALL THESE FEATURES AND REDIRECTS
+# TO THE SIGN UP PAGE IF THE SITE VISITOR IS NOT LOGGED IN
 
   def index
+
     @emotions = Emotion.all
     @emotions = @emotions.sample(@emotions.length) #randomize opening presentaiton
   end
