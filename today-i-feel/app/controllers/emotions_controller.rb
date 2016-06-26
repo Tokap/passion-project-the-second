@@ -11,21 +11,37 @@ class EmotionsController < ApplicationController
     @emotions = @emotions.sample(@emotions.length) #randomize opening presentaiton
   end
 
-# ADD CONDITIONAL LOGIC TO CHECK IF USER CONTENT EXISTS. 
-# IF IT DOES, HARVEST FROM THAT RESOURCE AS WELL AND COMBINE FOR RANDOM
-# OUTPUT RESULTS. THESE SHOULD BE BROKEN INTO CLEAR LOGIC CHAINS FOR 
-# EACH RESOURCE
+
   def show
     @emotion = Emotion.find(params[:id])
-    if !user_signed_in?
-      @quotes = @emotion.quotes.sample(4) #randomize quotes with max 4
-      @videos = @emotion.videos.sample(3) #randomize videos with max 3
-      @images = @emotion.images.sample(2) #randomize videos with max 2
+    # USER 1 is the Admin ID.
+    if user_signed_in?
+      ## QUOTES
+      @quotes = Quote.where(user_id: 1, emotion: @emotion)
+      @quotes = @quotes.sample(4) #randomize quotes with max 4
 
-    elsif user_signed_in?
-      @quotes = @emotion.quotes.sample(4) #randomize quotes with max 4
-      @videos = @emotion.videos.sample(3) #randomize videos with max 3
-      @images = @emotion.images.sample(2) #randomize videos with max 2
+      ## VIDEOS
+      @videos = Video.where(user_id: 1, emotion: @emotion)
+      @videos = @videos.sample(4) #randomize videos with max 3
+      
+      ## IMAGES
+      @images = Image.where(user_id: 1, emotion: @emotion)
+      @images = @images.sample(2) #randomize videos with max 2
+    
+
+
+    else
+      ## QUOTES
+      @quotes = Quote.where(user_id: 1, emotion: @emotion)
+      @quotes = @quotes.sample(4) #randomize quotes with max 4
+
+      ## VIDEOS
+      @videos = Video.where(user_id: 1, emotion: @emotion)
+      @videos = @videos.sample(4) #randomize videos with max 3
+      
+      ## IMAGES
+      @images = Image.where(user_id: 1, emotion: @emotion)
+      @images = @images.sample(2) #randomize videos with max 2
     end  
   end
 

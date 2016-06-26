@@ -25,7 +25,8 @@ ActiveRecord::Schema.define(version: 20160626174017) do
   create_table "images", force: :cascade do |t|
     t.string   "name"
     t.string   "url"
-    t.string   "emotion_id"
+    t.integer  "emotion_id"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -33,7 +34,8 @@ ActiveRecord::Schema.define(version: 20160626174017) do
   create_table "quotes", force: :cascade do |t|
     t.string   "body"
     t.string   "author"
-    t.string   "emotion_id"
+    t.integer  "emotion_id"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -59,7 +61,8 @@ ActiveRecord::Schema.define(version: 20160626174017) do
   create_table "videos", force: :cascade do |t|
     t.string   "name"
     t.string   "embedded_url"
-    t.string   "emotion_id"
+    t.integer  "emotion_id"
+    t.integer  "user_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
