@@ -3,7 +3,8 @@ class CreateVideos < ActiveRecord::Migration
     create_table :videos do |t|
       t.string :name
       t.string :embedded_url
-      t.string :emotion_id
+      t.integer :emotion_id
+      t.integer :user_id
 
       t.timestamps null: false
     end

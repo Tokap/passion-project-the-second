@@ -3,7 +3,8 @@ class CreateQuotes < ActiveRecord::Migration
     create_table :quotes do |t|
       t.string :body
       t.string :author
-      t.string :emotion_id
+      t.integer :emotion_id
+      t.integer :user_id
 
       t.timestamps null: false
     end

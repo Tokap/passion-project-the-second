@@ -3,7 +3,8 @@ class CreateImages < ActiveRecord::Migration
     create_table :images do |t|
       t.string :name
       t.string :url
-      t.string :emotion_id
+      t.integer :emotion_id
+      t.integer :user_id
 
       t.timestamps null: false
     end
