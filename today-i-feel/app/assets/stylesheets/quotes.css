@@ -28,3 +28,8 @@
   border-left: solid #E0F2F1;
   border-right: solid #E0F2F1;
 }
+
+.images {
+  display: inline-block;
+  margin-left: 40px
+}
