@@ -31,3 +31,32 @@ camus2 = Quote.create(body: "Blessed are the hearts that can bend; they shall ne
 camus3 = Quote.create(body: "Nobody realizes that some people expend tremendous energy merely to be normal.", author: "Albert Camus", emotion: lost)
 
 adams = Quote.create(body: "I may not have gone where I intended to go, but I think I have ended up where I needed to be.", author: "Douglas Adams", emotion: happy)
+
+########### VIDEO SEED ##############
+#### HAPPY ####
+nujabes = Video.create(name: "Nujabes - Kumomi", embedded_url: "https://www.youtube.com/embed/G4w21HcML2M", emotion: happy)
+redbone = Video.create(name: "Redbone - Come and Get Your Love", embedded_url: "https://www.youtube.com/embed/-B2zu3SOJU8", emotion: happy)
+more_puppies = Video.create(name: "Puppies Being Adorable", embedded_url: "https://www.youtube.com/embed/rT_I_GV_oEM", emotion: happy)
+
+
+#### NUMB ####
+thievery = Video.create(name: "Thievery Corporation - Lebanese Blonde", embedded_url: "https://www.youtube.com/embed/nq0ESlJhvBM", emotion: numb)
+muse = Video.create(name: "Muse - Knights of Cydonia", embedded_url: "https://www.youtube.com/embed/Q3Yc3HhSl1Q", emotion: numb)
+muppets = Video.create(name: "Muppets", embedded_url: "https://www.youtube.com/embed/8N_tupPBtWQ", emotion: numb)
+
+
+#### ANGRY ####
+dethklok = Video.create(name: "Dethklok - The Gear", embedded_url: "https://www.youtube.com/embed/WKtG3UxscZg", emotion: angry)
+animal_friends = Video.create(name: "Animal Friends", embedded_url: "https://www.youtube.com/embed/CRldCVq0k7U", emotion: angry)
+nujabes3 = Video.create(name: "Nujabes - Reflections Eternal", embedded_url: "https://www.youtube.com/embed/_qU2MXeAz1E?list=PLzerR4EIyAr5tETjmO7PTcl0CpGP5gELX", emotion: angry)
+
+
+#### LOST ####
+nujabes2 = Video.create(name: "Nujabes - A Day by Atmosphere Supreme", embedded_url: "https://www.youtube.com/embed/NlQGtLo4T6M", emotion: lost)
+thievery2 = Video.create(name: "Thievery Corporation - All That We Perceive", embedded_url: "https://www.youtube.com/embed/ZKfEzadyrO0", emotion: lost)
+kansas = Video.create(name: "Kansas - Carry On Wayward Son", embedded_url: "https://www.youtube.com/embed/2X_2IdybTV0?list=PL6MuH6qB4rHQ8xO_dHMC4P8a-38IK-0xT", emotion: lost)
+
+#### SAD ####
+puppies = Video.create(name: "Adorable Puppies", embedded_url: "https://www.youtube.com/embed/3ggIHfwkIWM", emotion: sad)
+kitties = Video.create(name: "Adorable Kitties", embedded_url: "https://www.youtube.com/embed/7HKWY5yCEh0", emotion: sad)
+tiger = Video.create(name: "Eye of the Tiger", embedded_url: "https://www.youtube.com/embed/QEjgPh4SEmU", emotion: sad)

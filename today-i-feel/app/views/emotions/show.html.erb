@@ -8,5 +8,7 @@
 </section>
 
 <section class="video">
-  <iframe width="250" height="215" src="https://www.youtube.com/embed/RS_3pED-wJo" frameborder="0" allowfullscreen></iframe>
+  <% @emotion.videos.each do |video| %>
+    <iframe width="250" height="215" src="<%=video.embedded_url%>" frameborder="0" allowfullscreen></iframe>
+    <% end %>
 </section>
