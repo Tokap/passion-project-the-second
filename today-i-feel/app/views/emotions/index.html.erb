@@ -2,7 +2,7 @@
 
 <% @emotions.each do |emotion| %>
   <div class="emotional-state circle" id='<%= emotion.name.downcase %>'>
-    <!-- <h2 class="emotional-text hidden" id='<%= emotion.name.downcase %>-text'><%= emotion.name %></h2> -->
     <h2 class="emotional-text hidden" id='<%= emotion.name.downcase %>-text'><%= link_to "#{emotion.name}", emotion_path(emotion), class: "emotional-text hidden" %></h2>
   </div>
 <%end%>
+

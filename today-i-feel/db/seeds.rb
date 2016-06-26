@@ -66,26 +66,26 @@ kitties = Video.create(name: "Adorable Kitties", embedded_url: "https://www.yout
 tiger = Video.create(name: "Eye of the Tiger", embedded_url: "https://www.youtube.com/embed/QEjgPh4SEmU", emotion: sad)
 
 
-########### VIDEO SEED ##############
+########### IMAGE SEED ##############
 #### HAPPY ####
 mountainscape = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg", emotion: happy)
 surf_curl = Image.create(name: "Surf", url: "http://www.instash.com/wp-content/uploads/2014/06/clark-little-2.jpg", emotion: happy) 
 
 #### NUMB ####
-x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
-x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+springs = Image.create(name: "Geiser Springs", url: "http://2.bp.blogspot.com/-g6aCiug9Cpc/U0KXHj8ZNNI/AAAAAAAAQyk/4Txp2yxoxkY/s1600/Bowels+of+the+Earth.jpg", emotion: numb)
+valley = Image.create(name: "Valley", url: "http://www.gla-mur.ru/repository/nature/www.pcwalls.ru_9927.jpg", emotion: numb)
 
 
 #### ANGRY ####
-x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
-x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+wave = Image.create(name: "Curling Wave", url: "http://www.featureshoot.com/wp-content/uploads/2014/08/Ryan_Struck_117501.jpg", emotion: angry)
+yosemite = Image.create(name: "Yosemite", url: "http://losgatosmagazine.com/wp-content/uploads/2014/08/yosemite01_62310514.jpg", emotion: angry)
 
 
 #### LOST ####
-x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
-x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+c_lake = Image.create(name: "Canyon Lake", url: "http://cl.jroo.me/z3/o/Z/J/d/a.aaa-Beautiful-and-majestic-natur.jpg", emotion: lost)
+mountain_path = Image.create(name: "Mountain Path", url: "http://1079638729.rsc.cdn77.org/pic/v2/gallery/preview/gory-pejzazh-29603.jpg", emotion: lost)
 
 
 #### SAD ####
-x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
-x = Image.create(name: "Mountainscape", url: "https://secure.static.tumblr.com/121be077c6bf3e5fc765b952c290f38a/sbwi74e/eEJnu0ljw/tumblr_static_tumblr_static_7tpcdqn9vx8gg8o80ws0scwss_640.jpg")
+stream = Image.create(name: "Forest Stream", url: "http://cdnstatic.visualizeus.com/thumbs/cc/fe/beautiful,landscape,nature,photography,tristania,water-ccfe9ecfb829f20dba0f415d580533f9_h.jpg", emotion: sad)
+mountain_home = Image.create(name: "Mountain Home", url: "https://s-media-cache-ak0.pinimg.com/564x/c0/91/07/c091078d53838e8a562f97d11dc9a46e.jpg", emotion: sad)
