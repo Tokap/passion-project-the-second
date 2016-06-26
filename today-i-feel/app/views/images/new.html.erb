@@ -1,8 +1,8 @@
 <h1>Add a new image</h1>
 
 <%= form_for :image, url: images_path, method: :post do |f| %>
-  Name: <%= f.text_field :name %><br />
-  Url: <%= f.text_field :url, :required => true %><br />
-  Emotion: <%= select_tag(:emotion, options_for_select([['Happy'], ['Sad'], ['Numb'], ['Angry'], ['Lost']])) %><br /><br />
+  <p class="form-tags">Name: </p><%= f.text_field :name %><br />
+  <p class="form-tags url">Url: </p><%= f.text_field :url, :required => true %><br />
+  <p class="form-tags">Emotion: </p><%= select_tag(:emotion, options_for_select([['Happy'], ['Sad'], ['Numb'], ['Angry'], ['Lost']])) %><br /><br />
   <%= f.submit %>
 <% end %>
