@@ -8,8 +8,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p><%= link_to "Home", root_path %></p>
-
+  <div class="nav-bar">
+    <p class="link"><%= link_to "Home", root_path %></p>
+  <% if !user_signed_in? %>
+    <p class="link"><%= link_to "Sign Up, if you want", new_user_registration_path %></p>
+  <% end  %>
+  </div>
 <%= yield %>
 
 </body>
