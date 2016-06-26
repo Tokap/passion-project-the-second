@@ -1,5 +1,8 @@
-<h1 class="question">What Do You Carry With You Today?</h1>
+<h1 class="question hidden">How Do You Feel Today?</h1>
 
 <% @emotions.each do |emotion| %>
-  <h2 class="emotional-state" id='<%= emotion.name.downcase %>'><%= emotion.name %></h2>
+  <div class="emotional-state circle" id='<%= emotion.name.downcase %>'>
+    <!-- <h2 class="emotional-text hidden" id='<%= emotion.name.downcase %>-text'><%= emotion.name %></h2> -->
+    <h2 class="emotional-text hidden" id='<%= emotion.name.downcase %>-text'><%= link_to "#{emotion.name}", emotion_path(emotion), class: "emotional-text hidden" %></h2>
+  </div>
 <%end%>

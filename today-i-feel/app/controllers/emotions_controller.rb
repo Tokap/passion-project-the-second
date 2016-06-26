@@ -4,4 +4,8 @@ class EmotionsController < ApplicationController
     @emotions = Emotion.all
   end
 
+  def show
+    @emotion = Emotion.find(params[:id])
+  end
+
 end
