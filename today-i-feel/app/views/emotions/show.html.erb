@@ -3,9 +3,5 @@
  <% @emotion.quotes.each do |quote| %>
    <p class="quote-body"> <%= quote.body %> </p>
    <p class="quote-author"> <%= quote.author %> </p>
+   <p><%= link_to "#{quote.author}", Wikipedia.find(quote.author).fullurl %></p>
  <% end %>
-
-
- <%= @wiki.fullurl %>
-
- <% this = Wikipedia.find("something") %>
