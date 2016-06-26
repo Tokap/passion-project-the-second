@@ -15,5 +15,30 @@
  */
 
 .new_user {
-  
+
+}
+
+.nav-bar p a {
+  text-decoration: none;
+  }
+
+.nav-bar p {
+  display: inline-block;
+  border-right: 1px;
+  border-color: black;
+  margin-left: 5px
+}
+
+.login-options {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+}
+
+.login-options p {
+  margin-left: 3px;
+}
+
+.login-options p a {
+  text-decoration: none;
 }
