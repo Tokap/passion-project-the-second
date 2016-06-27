@@ -46,3 +46,28 @@
 .creation-options {
   display: inline-block;
 }
+
+#login {
+  display: inline-block;
+  border: solid;
+  border-radius: 10%;
+  padding: 20px;
+  
+}
+
+#login h2 {
+  margin-top: -5px;
+  text-align: center;
+}
+
+#new-user {
+  display: inline-block;
+  border: solid;
+  border-radius: 10%;
+  padding: 20px;
+}
+
+#new-user h2 {
+  margin-top: -5px;
+  text-align: center;
+}
