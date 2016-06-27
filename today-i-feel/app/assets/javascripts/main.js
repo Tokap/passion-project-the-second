@@ -37,10 +37,28 @@ $(document).on('page:change', function() {
 
   $(".quote-display").hover(
       function(){ 
-      $('.link').removeClass('hidden');
+        $(this).find('.link').removeClass('hidden');
       }, 
       function(){  
-        $('.link').addClass('hidden')
+        $(this).find('.link').addClass('hidden')
+      }
+    );
+
+  $(".video").hover(
+      function(){ 
+        $(this).find('.link').removeClass('hidden');
+      }, 
+      function(){  
+        $(this).find('.link').addClass('hidden')
+      }
+    );
+
+  $(".images").hover(
+      function(){ 
+        $(this).find('.link').removeClass('hidden');
+      }, 
+      function(){  
+        $(this).find('.link').addClass('hidden')
       }
     );
 
