@@ -33,6 +33,6 @@ $(document).on('page:change', function() {
   })
 
   //QUOTES DISPLAY FADE IN
-  $('.quote-display').fadeIn(1500);
+  $('.show-emotion-page').fadeIn(1800);
 
 })
