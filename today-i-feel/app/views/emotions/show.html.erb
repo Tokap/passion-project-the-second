@@ -6,7 +6,7 @@
       <p class="quote-body"> <%= quote.body %> </p>
       <p class="quote-author"><%= link_to "#{quote.author}", Wikipedia.find(quote.author).fullurl %></p>
       <% if quote.user == current_user %>
-        <p class="link"><%= link_to "Get rid of it", quote_path(quote), method: :delete %></p>
+        <p class="link hidden"><%= link_to "Get rid of it", quote_path(quote), method: :delete %></p>
       <% end %>
 
     <% end %>

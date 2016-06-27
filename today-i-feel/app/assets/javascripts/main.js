@@ -32,7 +32,16 @@ $(document).on('page:change', function() {
     window.location = destination; 
   })
 
-  //QUOTES DISPLAY FADE IN
+  //FADE IN
   $('.show-emotion-page').fadeIn(1800);
+
+  $(".quote-display").hover(
+      function(){ 
+      $('.link').removeClass('hidden');
+      }, 
+      function(){  
+        $('.link').addClass('hidden')
+      }
+    );
 
 })
